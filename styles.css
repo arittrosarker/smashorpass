@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background: #fff;
@@ -50,6 +49,7 @@ main {
     height: auto;
     border: 2px solid #007bff;
     border-radius: 5px;
+    display: block; /* Ensures the image takes up space */
 }
 
 .button-container {
@@ -106,14 +106,13 @@ button:active {
 }
 
 .thumbnail {
-    width: 60px; /* Visible but not too large */
+    width: 60px;
     height: 60px;
     object-fit: cover;
     border-radius: 5px;
     margin-right: 15px;
 }
 
-/* Animations */
 .fade-in {
     animation: fadeIn 0.5s ease-in;
 }
@@ -123,7 +122,6 @@ button:active {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     .button-container {
         flex-direction: column;
